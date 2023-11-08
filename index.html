@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euros Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+
+<body>
+    <main class="container" id="app">
+
+        <label for="euros">
+            Euros €
+            <input v-model="amount" type="number" placeholder="">
+        </label>
+
+        <h3>Converted to dollars: {{ convertToDollars }} </h3>
+        <h3>Converted to yens: </h3>
+    </main>
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
